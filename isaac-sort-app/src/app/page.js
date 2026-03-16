@@ -4,7 +4,6 @@ import styles from "./page.module.css";
 export default function Home() {
   return (
     <div className={styles.page}>
-
       <header className={styles.intro}>
         <h1>This is the header</h1>
         <button>Log in</button>
@@ -12,10 +11,23 @@ export default function Home() {
       </header>
 
       <main className={styles.main}>
-        <h1>Welcome to SocialSpace</h1>
-        <p>No ads, no algorithms - just people you actually know.</p>
-        <button>Log in</button>
-        <button>Join the Club</button>
+        <h1
+          style={{
+            color: "#5a3013",
+            fontSize: "75px",
+            paddingTop: "100px",
+            marginTop: "100px",
+          }}
+        >
+          Welcome to SocialSpace
+        </h1>
+        <p style={{ color: "#5a3013", fontSize: "20px", fontStyle: "italic" }}>
+          No ads, no algorithms - just people you actually know.
+        </p>
+        <div>
+          <button>Log in</button>
+          <button>Join the Club</button>
+        </div>
       </main>
 
       <footer>
@@ -37,7 +49,6 @@ export default function Home() {
           </a>
         </div>
       </footer>
-
     </div>
   );
 }
