@@ -4,10 +4,33 @@ import styles from "./page.module.css";
 export default function Home() {
   return (
     <div className={styles.page}>
-      <header className={styles.intro}>
-        <h1>This is the header</h1>
-        <button>Log in</button>
-        <button>Join the Club</button>
+      <header className={styles.header}>
+        <div>
+          <h1
+            style={{
+              color: "#5a3013",
+              fontSize: "40px",
+              fontStyle: "italic",
+              textAlign: "left",
+            }}
+          >
+            SocialSpace
+          </h1>
+          <h2
+            style={{
+              color: "#5a3013",
+              fontSize: "10px",
+              fontStyle: "italic",
+              textAlign: "left",
+            }}
+          >
+            The last safe place on the internet
+          </h2>
+        </div>
+        <div>
+          <button>Log in</button>
+          <button>Join the Club</button>
+        </div>
       </header>
 
       <main className={styles.main}>
